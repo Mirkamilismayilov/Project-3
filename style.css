@@ -1,0 +1,160 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+.container{
+    display: grid;
+  grid-template-areas:
+  'header header header header header header'
+  '. . menu menu menu menu'
+  'main main main right right right'
+  'footer footer footer footer footer footer';
+  grid-gap: 10px;
+  background-color: #DEDEDE;
+  padding: 10px;
+}
+.item1{
+    grid-area: header;
+    padding: 10px;
+    height: 20vh;
+}
+.logo{
+    margin: 9%;
+    margin-top: 2%;
+}
+.logo h1{
+    font-size: 50px;
+    font-weight: 546;
+}
+.logo:hover{
+    opacity: 0.5;
+}
+.item2{
+    grid-area: menu;
+    padding: 20px;
+    width: 100%;
+    margin-right: 4%;
+}
+.item2 ul li{
+list-style-type: none;
+}
+.item2 ul li a{
+text-decoration: none;
+color: black;
+padding: 12px;
+font-size: 20px;
+background-color: white;
+transition: .4s ease-in all;
+}
+.item2 ul li a:hover{
+background-color: bisque;
+padding: 15px;
+transition: .4s ease-in all;
+}
+.item3{
+    grid-area: main;
+    padding: 10px;
+    width: 100%;
+}
+.data1{
+ padding: 10px;
+ display: inline;
+ float: left;
+ background-color: #F18400;
+}
+.data1 p{
+    text-align: center;
+    color: azure;
+    font-weight: bold;
+}
+.about{
+    margin-left: 9%;
+}
+.item3 .about{
+    text-align: justify;
+    overflow: hidden;
+}
+.item3 .about h3{
+    font-size: 50px;
+    font-weight: 400;
+}
+.praf{
+    overflow: hidden;
+    margin-left: 4%;
+    text-align: justify;
+    opacity: 0.8;
+}
+.praf span{
+  text-decoration: underline;
+  text-align: justify;
+}
+
+.praf p{
+  margin-left: 5%;
+  text-align: justify;
+}
+.praf p:first-child{
+    margin-left: 5%;
+    font-size: 15px;
+    overflow: hidden;
+}
+.item4{
+    grid-area: right;
+    padding: 10px;
+    width: 100%;
+    
+}
+.cat p:first-child{
+   background-color: black;
+   padding: 15px;
+   color: azure;
+font-size: 20px;
+opacity: 1;
+
+}
+.cat p{
+    opacity: 0.8;
+}
+.calendar p{
+    background-color: black;
+    padding: 15px;
+    color: azure;
+ font-size: 20px;
+ opacity: 1;
+}
+.calendar table{
+    opacity: 0.8;
+}
+.son p:first-child{
+    background-color: black;
+    padding: 15px;
+    color: azure;
+ font-size: 20px;
+ opacity: 1;
+}
+.son p{
+    opacity: 0.8;
+}
+.item5{
+    grid-area: footer;
+    background-color: black ;
+    padding: 5px;
+    width: 100%;
+    opacity: 0.7;
+}
+.item5 ul li{
+    display: inline-block;
+    margin: 15px;
+    font-size: 19px;
+    list-style: circle;
+    color: white;
+}
+.item5 ul li a{
+   text-decoration: dashed;
+   color: white ;
+   opacity: 0.8;
+}
+.item5 ul li:hover{
+    opacity: 0.5;
+}
